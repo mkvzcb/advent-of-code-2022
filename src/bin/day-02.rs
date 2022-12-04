@@ -12,33 +12,25 @@ use std::fs;
 // draw - 3
 // lose - 0
 // win  - 6
-fn calculate_score(x: u32, y: u32) -> u32 {
-    // draw
-    if y - x == 23 {
-        3 + (y % 87)
+fn calculate_score(moves: &[u8]) -> u8 {
+    if moves[2] - moves[0] == 23 {
+        return 3 + (moves[2] % 87);
     }
     // lost
-    else if (y - x) == 22 || (y - x) == 25 {
-        y % 87
+    else if (moves[2] - moves[0]) == 22 || (moves[2] - moves[0]) == 25 {
+        return moves[2] % 87;
     }
     // rest of cases - win
     else {
-        6 + (y % 87)
+        return 6 + (moves[2] % 87);
     }
     // add 1 for rock, 2 for paper, 3 for scissors
 }
 
 fn part_1(data: &String) -> Result<u32, Box<dyn Error>> {
-    let result = data
-        .lines()
-        .map(|strategy| {
-            strategy
-                .split_whitespace()
-                .map(|letter| letter.parse::<char>().unwrap() as u32) // todo other way??
-                .reduce(|rival, player| calculate_score(rival, player)) // could be done differently
-                .unwrap_or_else(|| 0)
-        })
-        .sum::<u32>();
+    let result = data.lines().fold(0, |acc, strategy| {
+        acc + calculate_score(strategy.as_bytes()) as u32
+    });
     Ok(result)
 }
 
@@ -53,26 +45,26 @@ fn part_1(data: &String) -> Result<u32, Box<dyn Error>> {
 // draw - 3
 // lose - 0
 // win  - 6
-fn calculate_result(x: u32, y: u32) -> u32 {
-    match y {
+fn calculate_result(moves: &[u8]) -> u8 {
+    match moves[2] {
         // lost
         88 => {
-            if x == 65 {
+            if moves[0] == 65 {
                 return 3;
             } else {
-                return (x % 64) - 1;
+                return (moves[0] % 64) - 1;
             }
         }
         // draw
         89 => {
-            return 3 + (x % 64);
+            return 3 + (moves[0] % 64);
         }
         // win
         90 => {
-            if x == 67 {
+            if moves[0] == 67 {
                 return 7;
             } else {
-                return 7 + (x % 64);
+                return 7 + (moves[0] % 64);
             }
         }
         _ => 0,
@@ -80,16 +72,9 @@ fn calculate_result(x: u32, y: u32) -> u32 {
 }
 
 fn part_2(data: &String) -> Result<u32, Box<dyn Error>> {
-    let result = data
-        .lines()
-        .map(|strategy| {
-            strategy
-                .split_whitespace()
-                .map(|letter| letter.parse::<char>().unwrap() as u32) // todo other way??
-                .reduce(|rival, player| calculate_result(rival, player)) // could be done differently
-                .unwrap_or_else(|| 0)
-        })
-        .sum::<u32>();
+    let result = data.lines().fold(0, |acc, strategy| {
+        acc + calculate_result(strategy.as_bytes()) as u32
+    });
     Ok(result)
 }
 
