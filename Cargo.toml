@@ -8,6 +8,7 @@ edition = "2021"
 criterion = "0.3"
 
 [dependencies]
+itertools = "0.10.5"
 
 [[bench]]
 name = "my_benchmark"

@@ -6,19 +6,21 @@ $ cargo run --bin [day]
 ```
 Replace [problem] with for ex:
 ```
-$ cargo run --bin day-01
+$ cargo run --bin day_01
 ```
 
-To run tests, do the same as above:
+To run tests:
 ```
-$ cargo test --bin day-01
+$ cargo test --test tests
 ```
-or just
-```
-$ cargo test
-```
+
 
 ##  Days
 - [x] 01
 - [x] 02
-- [ ] 03
+- [x] 03
+- [ ] 04
+- [ ] 05
+- [ ] 06
+- [ ] 07
+

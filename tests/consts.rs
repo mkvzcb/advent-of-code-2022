@@ -1,0 +1,25 @@
+#![allow(dead_code)]
+pub const DAY01: &str = "5324\n5176\n2197\n2701\n6185\n3901\n5392\n2065\n6467\n6085\n5062\n1841\n1197\n1318\n\n4901\n3443\n1403\n5570\n4336\n5672\n2532\n5627\n6038\n1099\n4305\n2317\n1382\n3226\n4427\n\n2612\n15638\n\n4118\n4687\n2243\n3532\n2089\n3937\n1146\n5069\n5728\n2962\n3099\n5882\n5448\n6064\n";
+pub const DAY02: &str = "C X\nC X\nA Y\nC X\nB Y\nA X\nA Z\nB Y\nC Z\nC Z\nB X\nC Z\nB Y\nC Z\nB Y\nA Z\nB Y\nC X\nC X\nC X\nB X\nC Z\nC X\nC Z\nC X\nA Y\nB Y\nB Z\nA X\nC X\nC Z\nC Z\nA Z\nB Y\nC Z\nC X\nC X\nC Z\nB Y\nC Z\n";
+pub const DAY03: &str = "GwrhJPDJCZFRcwfZWV\nLjnQlqNpjjmpmQlLlqNfZRvQcTWcTSTTZcSQcZ\nnNqjdspspngnmjmslqmjjjCDGrHPHMGddGCMCGPPPJWC\nGwmVZmPWWFFmBbVbZVwmbPsTCnlgQgnQfhlffffZnlQh\nDqVDSqqSMzLLDDNSHHLdqSdSllCQjsTlClhlflnTlhjgfgfM\nVHJztNLHGtcbvvPG\nbjrPrNCtNrjdcCPpptfpTVspDtfTtB\nJGQJMJQMmmmZMnnLpLBTpHCD\nWJJqWRgWlCJZhZRCQZwdPScdrPNbvzPzwvqz\nQNSQNBWQNLjZBNNhLhSNRsTcsrTTVzcwZZZsfrrbwb\ntCFtHpppppMldpvpqnMFmMVGrbPcrwbzswrzcccfvTfw\npdmCpgqCdmHHdJVWgSRNJDRVVj\nsNrFnvNSzrjQtQjQTj\nlcPmcJDLdPDbJPVLljdGGBBThBQTGwTtBw\nPDLqmJmpJQfFqfqsCM\nBnhctqdnqnRcBnslCJJCMrJrsG\nwNDMZpbQwMpCvCGVjlss\nWfzNwZFbwZzZmFZbLzNwzzzzcdqgRMTTPdHPTTPMRdcWgRPt\ngrsrVSFSSdFSDFVFjZZWwpWpZWZplgZZ\nmcBPPPBLBfNdLlvvWljWJC\ndMcmcRdbRzdVhFthSsTShM\nbzvJZMTzTZSHLCCdDzmDcc\nhqBqWPFssvshWvvssNqtsHftmfpHfdcdDGHmcpfctL\nWvBQgNNNhghTJbJQlJTZlT\nchcdwNwdbCbQctCjnnQGHsQspMHMjG\nnSSSJqJZzJgWWRfZDJSnqvTTsVvvHVPpHVfpjHMTjP\nBZRDRmmrDWSrZWWzWSRNhdnCFwChclFtwbNdtr\nlNgmssCtqLwqCCtfsCLHPFhhhmMhVzBDbVzMDMVz\nZnRlQTlJzFQFQFVV\nnpZJvRRGZSnWvSvrSLglsClfpfcLgNgpHf\ntVtqcVqFVtZhcfFtqlgSpmpDSDNPzSzZmNpw\nLRGTHqbrHdnGHrTCSSwNDzMDwPMzNwbp\nTqWGJrGHCHnTWnhsWcFthFjtfQch\nqNnTbwtctvffFcqfrHjMrFjVHRjSjZDZ\ndLLzWWPmCmCzGdsLgBLGGBDRMVMHRlrrrZDDZsNMrNNS\nPJQWggCzWNWJzGWfchvfTbJvfnnwtf\nghzdgzzdQsdqzzhMNqQzvhgQnRRBWTjWWGTRGWwGTZhwGnBT\nfsrfJHbFfDFLVLVFHrWCWrBRZZTGCCjwWZ\nHLLllcDPbLPQdPspMNgvMt\nfNDJqdPNbtHpCbwpCCCp\nRTMRLrzGrMRMRPWnnvSmgCHFCCFmmT\nWQsWQjzGWMsGQzWclQtVBJfBftNdtqVPfP\ngbTCVVmDVFdsgmgrrcfwlwfTfPlcRR\nqhQZqQvnQhLQhJnvfPcSwSwlfjGcqjqj\ntLNZLZZJJZthpzhMZDCdFmFsmWWmtDDgsw\nbqCvLvLppzPzPPvPbFztFtttBNGdGsRggSgGSHDdggHSzNgH\nrMQpWfMfrcTjWJhwWHHsSBsRBdSTTNBgSR\nVwfmWjwMWwccrWcWpQQFnFtlCqmltFnFLbbZmn\ncWqsMWJMzqJJMHsJcqsJqTqjSbLBdfdSbtzLbbLfbSfShfhd\ngplGvQmRrCrgZSZtSGZZjhbj\n";
+pub const DAY04: &str = "";
+pub const DAY05: &str = "";
+pub const DAY06: &str = "";
+pub const DAY07: &str = "";
+pub const DAY08: &str = "";
+pub const DAY09: &str = "";
+pub const DAY10: &str = "";
+pub const DAY11: &str = "";
+pub const DAY12: &str = "";
+pub const DAY13: &str = "";
+pub const DAY14: &str = "";
+pub const DAY15: &str = "";
+pub const DAY16: &str = "";
+pub const DAY17: &str = "";
+pub const DAY18: &str = "";
+pub const DAY19: &str = "";
+pub const DAY20: &str = "";
+pub const DAY21: &str = "";
+pub const DAY22: &str = "";
+pub const DAY23: &str = "";
+pub const DAY24: &str = "";
